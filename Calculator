@@ -1,0 +1,18 @@
+a = int(input("Give number above 3 "))
+a2 = a
+if a <= 3:
+    print("number is smaller or equal 3")
+else:
+    while True:
+        while a > 1:
+            if a == 4:
+                print(a2, "loop, checking next one")
+                a2 += 1
+                a = a2
+
+
+            if a % 2 == 0:
+                a = a / 2
+            elif a % 2 == 1:
+                a = a * 3 + 1
+
